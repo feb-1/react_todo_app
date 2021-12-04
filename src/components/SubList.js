@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import DeleteIcon from '@mui/icons-material/Delete';
 import CheckIcon from '@mui/icons-material/Check';
+
+
 function SubList({ todos, todo, text, setTodos }) {
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== todo.id));
@@ -30,14 +32,14 @@ function SubList({ todos, todo, text, setTodos }) {
           <strike>{text}</strike>
         </List>
       )}
-      <BtWrap>
+      <BtnWrap>
         <Button className="complete-btn" onClick={completeHandler}>
           <CheckIcon/>
         </Button>
         <Button className="trash-btn" onClick={deleteHandler}>
           <DeleteIcon />
         </Button>
-      </BtWrap>
+      </BtnWrap>
     </Container>
   );
 }
@@ -69,7 +71,7 @@ const Text = styled.h2`
     font-weight:400;
     text-align:center;
 `;
-const BtWrap = styled.div`
+const BtnWrap = styled.div`
   padding: 5px;
 `;
 export default SubList;
