@@ -26,11 +26,11 @@ function SubList({ todos, todo, text, setTodos }) {
   return (
     <Container>
       {todo.completed === false ? (
-        <Text className="todo-item">{text}</Text>
+        <Text>{text}</Text>
       ) : (
-        <List className="todo-item">
+        <Text>
           <strike>{text}</strike>
-        </List>
+        </Text>
       )}
       <BtnWrap>
         <Button className="complete-btn" onClick={completeHandler}>
@@ -55,18 +55,14 @@ const Container = styled.div`
   justify-content: space-between;
   transition: all 1s ease;
 `;
+
 const Button = styled.button`
 padding:5px;
 margin:5px;
 `
 
-
-const List = styled.li`
-  list-style: none;
- 
-`;
-
 const Text = styled.h2`
+    list-style:none;
     margin-left:20px;
     font-weight:400;
     text-align:center;
