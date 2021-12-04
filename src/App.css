@@ -31,10 +31,8 @@ body {
 }
 
 strike {
-  font-size: 30px;
-  font-weight: 400;
-  color:chartreuse;
-  opacity: 0.75;
-  margin-left: 20px;
+  font-weight: 500;
+  color:green;
+  opacity: 0.80;
   text-align: center;
 }
