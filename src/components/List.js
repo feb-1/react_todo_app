@@ -3,8 +3,8 @@ import SubList from './SubList'
 
 function List({todos,setTodos}) {
     return (
-        <div className="todo-container">
-            <ul className="todo-list">
+        <div>
+            <ul>
                 {todos.map((todo)=>(
                     <SubList todos={todos} setTodos={setTodos} key={todo.id} todo={todo} text={todo.text}/>
                 ))}
