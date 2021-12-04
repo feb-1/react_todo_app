@@ -1,0 +1,40 @@
+body {
+  background-image: linear-gradient(270deg, blue, violet);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto;
+}
+.Main-wrapper {
+  height: 100%;
+  width: 60%;
+}
+
+.complete-btn {
+  color: gray;
+}
+.complete-btn:hover {
+  color: green;
+  transform: scale(1.1, 1.1);
+  background-color: white;
+}
+.trash-btn {
+  color: gray;
+}
+.trash-btn:hover {
+  color: red;
+  transform: scale(1.1, 1.1);
+  background-color: white;
+}
+
+strike {
+  font-size: 30px;
+  font-weight: 400;
+  color:chartreuse;
+  opacity: 0.75;
+  margin-left: 20px;
+  text-align: center;
+}
